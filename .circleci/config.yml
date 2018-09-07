@@ -15,7 +15,11 @@ jobs:
       TERM: dumb
       JACOCO_SOURCE_PATH: src/main/java
       CODECLIMATE_TEST_REPORTER_ID: 9293ff84b57e017c1d3ffe32a1d3b437fad1fbb49c84b05f1e2795285352d9cd
+
+
+
     
+
     steps:
       - checkout
 
@@ -54,5 +58,3 @@ jobs:
           command: |
             ./cc-test-reporter format-coverage build/reports/jacoco/test/jacocoTestReport.xml --input-type jacoco
             ./cc-test-reporter upload-coverage
-
-
